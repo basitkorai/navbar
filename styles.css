@@ -79,6 +79,7 @@ body {
     #2bd2ff 52%,
     #2bff88 90%
   );
+  background-repeat: repeat-y;
 }
 ul {
   list-style-type: none;
@@ -167,6 +168,7 @@ Navbar
   display: flex;
   justify-content: space-between;
   align-items: center;
+
 }
 
 .container {
@@ -212,7 +214,6 @@ header {
 .hamburger {
   transition: 350ms;
   cursor: pointer;
-  /* border: yellow solid 2px; */
 }
 
 .burger {
@@ -267,12 +268,13 @@ header {
   .navlist {
     height: auto;
     display: flex;
-    
+
   }
 
   .container {
     display: flex;
     justify-content: space-between;
+    align-items: center;
 
   }
 }
