@@ -267,7 +267,7 @@ header {
   .navlist {
     height: auto;
     display: flex;
-    gap: 0.8rem;
+    
   }
 
   .container {
