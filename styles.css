@@ -199,7 +199,7 @@ header {
   cursor: pointer;
 }
 
-.hamburger:hover {
+.burger {
   rotate: 90deg;
 }
 
@@ -245,7 +245,6 @@ header {
 
 @media screen and (max-width: 910px) {
   nav {
-    /* display: none; */
     height: 0;
     position: absolute;
     top: 62px;
@@ -260,9 +259,7 @@ header {
   .navlist {
     display: block;
     width: 100%;
-    /* margin:  auto 0 auto; */
     text-align: center;
-    /* opacity: 0; */
     border-radius: 0;
   }
 
@@ -274,6 +271,7 @@ header {
   .nav-item *:hover {
     border-radius: 0;
   }
+
   .hamburger {
     display: block;
   }
