@@ -3,7 +3,9 @@
 Fonts
 ===============
 */
+
 @import url("https://fonts.googleapis.com/css?family=Open+Sans|Roboto:400,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Jost&display=swap");
 
 /*
 ===============
@@ -52,6 +54,7 @@ Variables
   --max-width: 1170px;
   --fixed-width: 620px;
 }
+
 /*
 ===============
 Global Styles
@@ -65,28 +68,31 @@ Global Styles
   padding: 0;
   box-sizing: border-box;
 }
+
 body {
-  font-family: "Product Sans";
+  font-family: "Jost", sans-serif;
   background: rgba(0, 0, 0, 0.8);
   color: var(--clr-grey-1);
   line-height: 1.5;
   font-size: 0.875rem;
 
-  background-color: #fa8bff;
+  background-color: #4158d0;
   background-image: linear-gradient(
-    45deg,
-    #fa8bff 0%,
-    #2bd2ff 52%,
-    #2bff88 90%
+    43deg,
+    #4158d0 0%,
+    #c850c0 46%,
+    #ffcc70 100%
   );
-  background-repeat: repeat-y;
 }
+
 ul {
   list-style-type: none;
 }
+
 a {
   text-decoration: none;
 }
+
 h1,
 h2,
 h3,
@@ -97,22 +103,28 @@ h4 {
   margin-bottom: 0.75rem;
   font-family: var(--ff-primary);
 }
+
 h1 {
   font-size: 3rem;
 }
+
 h2 {
   font-size: 2rem;
 }
+
 h3 {
   font-size: 1.25rem;
 }
+
 h4 {
   font-size: 0.875rem;
 }
+
 p {
   margin-bottom: 1.25rem;
   color: var(--clr-grey-5);
 }
+
 @media screen and (min-width: 800px) {
   h1 {
     font-size: 4rem;
@@ -153,6 +165,7 @@ p {
     width: 95vw;
   }
 }
+
 main {
   min-height: 100vh;
   display: grid;
@@ -164,11 +177,11 @@ main {
 Navbar
 ===============
 */
+
 .row {
   display: flex;
   justify-content: space-between;
   align-items: center;
-
 }
 
 .container {
@@ -217,7 +230,7 @@ header {
 }
 
 .burger {
-  rotate: 90deg;
+  transform: rotate(90deg);
 }
 
 .line {
@@ -268,13 +281,11 @@ header {
   .navlist {
     height: auto;
     display: flex;
-
   }
 
   .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
-
   }
 }
