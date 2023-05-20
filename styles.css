@@ -244,6 +244,7 @@ header {
   height: 0;
   overflow: hidden;
   transition: 350ms;
+  gap: 1rem;
 }
 
 .toggle {
@@ -254,15 +255,17 @@ header {
 .nav-item {
   list-style-type: none;
   text-align: center;
+  /* transition: background-color 1000ms fade-in; */
+  transition-duration: 500ms;
+  transition-timing-function: cubic-bezier(0.445, 0.05, 0.55, 0.95);
+  transition-property: background-color, color;
+  border-radius: 50px;
 }
 
-.nav-item:hover,
-.nav-item *:hover {
+.nav-item:hover {
   background-color: #fbda61;
-  background-image: linear-gradient(90deg, #fbda61 0%, #ff5acd 100%);
+  /* background-image: linear-gradient(90deg, #fbda61 0%, #ff5acd 100%); */
 
-  color: hsl(0, 0%, 0%);
-  border-radius: 50px;
 }
 
 .nav-link {
@@ -271,6 +274,10 @@ header {
   color: #fefefe;
   font-size: 20px;
   padding: 0.5rem 1.5rem;
+}
+
+.nav-link:hover {
+  color: hsl(0, 0%, 0%);
 }
 
 @media screen and (min-width: 800px) {
